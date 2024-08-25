@@ -1,18 +1,21 @@
 #pragma once
 
-#include <iostream>
 #include "Seat.h"
+#include <iostream>
 
-using namespace std;
-
-class Room
-{
+class Room {
 private:
     int id;
     int seatsNumber;
     double price;
-    Seat roomSeats[10][10];
+    Seat roomSeats[5][5]; // 5x5 seats matrix
 
 public:
+    Room();
+    Room(int id, int seatsNumber, double price);
+    double getPrice();
+    bool reserveSeat(int row, int col);
+    void displaySeats();
+    bool sellSeat(int row, int col);
 };
 

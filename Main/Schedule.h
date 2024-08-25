@@ -15,6 +15,11 @@ private:
     Room room; //*
 
 public:
+    Schedule();
+    Schedule(string date, int startHour, int endHour, Movie movie, Room room);
+    Movie getMovie();
+    Room getRoom();
+    string getDate();
 
 };
 

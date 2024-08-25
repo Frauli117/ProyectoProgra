@@ -1,16 +1,20 @@
 #pragma once
 
-#include <iostream>
-
+#include <string>
 using namespace std;
 
-class Seat
-{
+class Seat {
 private:
     int id;
-    string state; //Disponible | Reservada | Vendida
+    char state; // Disponible | Reservada | Vendida
 
 public:
+    Seat();
+    char getState();
+    int getId();
+    void reserve();
+    void sell();
+    bool isAvailable();
+    void reset();
 
 };
-

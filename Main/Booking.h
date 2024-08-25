@@ -15,6 +15,12 @@ private:
     int bookingNumber;
 
 public:
+    Booking();
+    Booking(int totalprice, int bookingNumber);
+    void createBooking(Schedule schedule);
+    bool reserveSeat(int row, int col);
+    double getTotalPrice();
+    int getBookingNumber();
 
 };
 

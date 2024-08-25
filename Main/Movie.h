@@ -1,30 +1,35 @@
 #pragma once
 
-#include <iostream>
-
+#include <string>
 using namespace std;
 
-class Movie
-{
+class Movie {
 private:
     string name;
     int year;
     int time;
     string country;
-    int review; //Del 0 al 10
+    int reviews; 
+    bool withData;
 
 public:
-
     Movie();
-    Movie(string name, int year, int time, string country, int review);
-    void setName(string name);
-    void setYear(int year);
-    void setTime(int time);
-    void setCountry(string country);
-    void setReview(int review);
+    Movie(string name, int year, int time, string country, int reviews);
+
+    // Getters
     string getName();
     int getYear();
+    int getTime();
+    string getCountry();
+    int getReviews();
+    bool getWithData();
 
-
+    // Setters
+    void setName(string n);
+    void setYear(int y);
+    void setTime(int t);
+    void setCountry(string c);
+    void setReviews(int r);
+    void setWithData(bool wd);
 };
 
