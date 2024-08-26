@@ -9,7 +9,7 @@ Booking::Booking(int totalPrice, int bookingNumber){
 void Booking::createBooking(Schedule schedule) {
     this->schedule = schedule;
     totalPrice = 0.0;
-    bookingNumber = rand() % 10000; // Generar un número de reserva aleatorio
+    bookingNumber = rand() % 100;
 }
 
 bool Booking::reserveSeat(int row, int col) {

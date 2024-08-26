@@ -9,7 +9,7 @@ using namespace std;
 class Sale
 {
 private:
-    Booking booking; //*
+    Booking booking;
     string idCustomer;
     string cardNumber;
 

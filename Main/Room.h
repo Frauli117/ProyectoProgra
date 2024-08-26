@@ -8,7 +8,7 @@ private:
     int id;
     int seatsNumber;
     double price;
-    Seat roomSeats[5][5]; // 5x5 seats matrix
+    Seat roomSeats[5][5];
 
 public:
     Room();

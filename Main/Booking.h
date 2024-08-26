@@ -9,8 +9,8 @@ using namespace std;
 class Booking
 {
 private:
-    Schedule schedule; //*
-    Seat bookSeats[5]; //Limite de 5 asientos por reserva
+    Schedule schedule;
+    Seat bookSeats[5]; 
     double totalPrice;
     int bookingNumber;
 

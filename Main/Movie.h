@@ -16,7 +16,6 @@ public:
     Movie();
     Movie(string name, int year, int time, string country, int reviews);
 
-    // Getters
     string getName();
     int getYear();
     int getTime();
@@ -24,7 +23,6 @@ public:
     int getReviews();
     bool getWithData();
 
-    // Setters
     void setName(string n);
     void setYear(int y);
     void setTime(int t);

@@ -11,8 +11,8 @@ private:
     string date;
     int startHour;
     int endHour;
-    Movie movie; //*
-    Room room; //*
+    Movie movie;
+    Room room;
 
 public:
     Schedule();

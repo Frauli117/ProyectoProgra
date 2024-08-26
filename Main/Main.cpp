@@ -11,7 +11,7 @@ int main() {
     int scheduleIndex;
     cout << "Seleccione un horario (1-4): ";
     cin >> scheduleIndex;
-    scheduleIndex--; // Ajustar para índice de array
+    scheduleIndex--;
 
     cinema.displayRoomSeats(scheduleIndex);
 
