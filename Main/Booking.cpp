@@ -1,6 +1,8 @@
 #include "Booking.h"
 #include "Room.h"
 
+Booking::Booking(){}
+
 Booking::Booking(int totalPrice, int bookingNumber){
     totalPrice = 0;
     bookingNumber = 0;

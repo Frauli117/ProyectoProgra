@@ -5,7 +5,5 @@
   Room.cpp
   Sale.cpp
   Schedule.cpp
-  Seat.cpp
   Generando código...
-Cinema.obj : error LNK2019: símbolo externo "public: __cdecl Booking::Booking(void)" (??0Booking@@QEAA@XZ) sin resolver al que se hace referencia en la función "public: __cdecl Cinema::Cinema(void)" (??0Cinema@@QEAA@XZ)
-C:\Users\Kenneth\Desktop\Proyecto de progra\x64\Debug\Main.exe : fatal error LNK1120: 1 externos sin resolver
+  Main.vcxproj -> C:\Users\Kenneth\Desktop\Proyecto de progra\x64\Debug\Main.exe
