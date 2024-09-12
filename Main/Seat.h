@@ -6,7 +6,7 @@ using namespace std;
 class Seat {
 private:
     int id;
-    char state; // Disponible | Reservada | Vendida
+    char state;
 
 public:
     Seat();

@@ -20,6 +20,8 @@ public:
     Movie getMovie();
     Room getRoom();
     string getDate();
+    int getStartHour();
+    int getEndHour();
 
 };
 

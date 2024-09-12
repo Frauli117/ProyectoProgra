@@ -2,7 +2,7 @@
 
 Movie::Movie() : withData(false) {}
 
-Movie::Movie(string name, int year, int time, string country, int review) {
+Movie::Movie(string name, int year, int time, string country, int reviews) {
     this->name = name;
     this->year = year;
     this->time = time;
@@ -10,24 +10,24 @@ Movie::Movie(string name, int year, int time, string country, int review) {
     this->reviews = reviews;
 }
 
-void Movie::setName(string name) {
-    this->name = name;
+void Movie::setName(string n) {
+    name = n;
 }
 
-void Movie::setYear(int year) {
-    this->year = year;
+void Movie::setYear(int y) {
+    year = y;
 }
 
-void Movie::setTime(int time) {
-    this->time = time;
+void Movie::setTime(int t) {
+    time = t;
 }
 
-void Movie::setCountry(string country) {
-    this->country = country;
+void Movie::setCountry(string c) {
+    country = c;
 }
 
-void Movie::setReviews(int reviews) {
-    this->reviews = reviews;
+void Movie::setReviews(int r) {
+    reviews = r;
 }
 
 void Movie::setWithData(bool wd) { 
@@ -35,11 +35,11 @@ void Movie::setWithData(bool wd) {
 }
 
 string Movie::getName() {
-    return this->name;
+    return name;
 }
 
 int Movie::getYear() {
-    return this->year;
+    return year;
 }
 
 int Movie::getTime() { 
@@ -49,7 +49,8 @@ int Movie::getTime() {
 string Movie::getCountry() { 
     return country; }
 
-int Movie::getReviews() { return reviews; 
+int Movie::getReviews() { 
+    return reviews; 
 }
 
 bool Movie::getWithData() { 

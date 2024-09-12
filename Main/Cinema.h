@@ -17,15 +17,20 @@ private:
     Booking cinemaBookings[50];
     Sale sales[50];
     int bookingCount;
+    int saleCount;
 
 public:
     Cinema();
     void generateMovies();
     void generateRooms();
     void generateSchedules();
-    void displaySchedule();
+    void makeSale(int bookingNumber);
     void makeBooking(int scheduleIndex, int row, int col);
+    void handleSale();
+    void displayMovies();
+    void displaySchedule();
     void displayRoomSeats(int scheduleIndex);
+    void displayRooms();
 
 };
 

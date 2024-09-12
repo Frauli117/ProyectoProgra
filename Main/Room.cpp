@@ -21,6 +21,10 @@ double Room::getPrice() {
     return this->price;
 }
 
+int Room::getId() {
+    return this->id;
+}
+
 void Room::displaySeats() {
     cout << "Asientos en la sala " << id << ":\n";
     for (int i = 0; i < 5; i++) {

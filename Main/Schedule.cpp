@@ -21,3 +21,11 @@ Room Schedule::getRoom() {
 string Schedule::getDate() {
     return this->date;
 }
+
+int Schedule::getStartHour() {
+    return startHour;
+}
+
+int Schedule::getEndHour() {
+    return endHour;
+}

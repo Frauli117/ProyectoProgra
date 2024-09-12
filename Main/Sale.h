@@ -15,5 +15,7 @@ private:
 
 public:
 
+    Sale();
+    void makeSale(Booking booking);
 };
 
