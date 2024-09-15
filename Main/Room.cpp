@@ -1,28 +1,38 @@
 #include "Room.h"
 
-Room::Room() {
-}
+Room::Room() {}
 
 Room::Room(int id, int seatsNumber, double price) {
     this->id = id;
     this->seatsNumber = seatsNumber;
     this->price = price;
-    int seatId = 1;
+
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            roomSeats[i][j] = Seat();
-            seatId++;
+            int randomState = rand() % 3;
+            if (randomState == 0) {
+                roomSeats[i][j].setState('D');
+            }
+            else if (randomState == 1) {
+                roomSeats[i][j].setState('R');
+            }
+            else {
+                roomSeats[i][j].setState('V');
+            }
         }
     }
-
 }
 
 double Room::getPrice() {
-    return this->price;
+    return price;
 }
 
 int Room::getId() {
-    return this->id;
+    return id;
+}
+
+int Room::getSeatsNumber() {
+    return seatsNumber;
 }
 
 void Room::displaySeats() {

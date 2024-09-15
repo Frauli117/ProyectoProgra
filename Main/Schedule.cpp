@@ -11,15 +11,15 @@ Schedule::Schedule(string date, int startHour, int endHour, Movie movie, Room ro
 }
 
 Movie Schedule::getMovie() {
-    return this->movie;
+    return movie;
 }
 
 Room Schedule::getRoom() {
-    return this->room;
+    return room;
 }
 
 string Schedule::getDate() {
-    return this->date;
+    return date;
 }
 
 int Schedule::getStartHour() {

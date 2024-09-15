@@ -30,16 +30,16 @@ void Cinema::generateRooms() {
 }
 
 void Cinema::generateSchedules() {
-    Schedule schedule1("28/08/2024", 18, 20, cinemaMovies[0], cinemaRooms[0]);
+    Schedule schedule1("20/09/2024", 18, 20, cinemaMovies[0], cinemaRooms[0]);
     cinemaSchedules[0] = schedule1;
 
-    Schedule schedule2("28/08/2024", 18, 20, cinemaMovies[1], cinemaRooms[1]);
+    Schedule schedule2("20/09/2024", 18, 20, cinemaMovies[1], cinemaRooms[1]);
     cinemaSchedules[1] = schedule2;
 
-    Schedule schedule3("28/08/2024", 21, 23, cinemaMovies[2], cinemaRooms[0]);
+    Schedule schedule3("20/09/2024", 21, 23, cinemaMovies[2], cinemaRooms[0]);
     cinemaSchedules[2] = schedule3;
 
-    Schedule schedule4("28/08/2024", 21, 23, cinemaMovies[3], cinemaRooms[1]);
+    Schedule schedule4("20/09/2024", 21, 23, cinemaMovies[3], cinemaRooms[1]);
     cinemaSchedules[3] = schedule4;
 }
 
@@ -85,7 +85,7 @@ void Cinema::makeBooking(int scheduleIndex, int row, int col) {
             cout << "Reserva exitosa. Número de reserva: " << newBooking.getBookingNumber() << endl;
         }
         else {
-            cout << "Asiento no disponible.\n";
+            cout << "Asiento no disponible. Se encuentra reservado o vendido.\n";
         }
     }
     else {
@@ -119,6 +119,7 @@ void Cinema::displayRooms() {
         Room r = cinemaRooms[i];
         cout << "Sala " << r.getId()
             << " - Precio: " << r.getPrice()
-            << " colones\n";
+            << " colones\n"
+            << "  Número de butacas: " << r.getSeatsNumber() << endl;
     }
 }

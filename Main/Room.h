@@ -15,6 +15,7 @@ public:
     Room(int id, int seatsNumber, double price);
     double getPrice();
     int getId();
+    int getSeatsNumber();
     bool reserveSeat(int row, int col);
     void displaySeats();
     bool sellSeat(int row, int col);

@@ -32,7 +32,7 @@ int main() {
             getline(cin, subChoice);
 
             if (subChoice == "i") {
-                cout << "Sistema de gestión de cine. Versión 1.0\n";
+                cout << "Sistema de gestión de cine. Realizado por Mc Kenneth Frauli Arce. Versión 1.0\n";
             }
             else if (subChoice == "ii") {
                 cout << "Saliendo del programa...\n";

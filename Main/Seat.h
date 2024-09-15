@@ -11,6 +11,7 @@ private:
 public:
     Seat();
     char getState();
+    void setState(char newSate);
     int getId();
     void reserve();
     void sell();

@@ -1,10 +1,3 @@
-﻿  Booking.cpp
-  Cinema.cpp
-  Main.cpp
+﻿  Main.cpp
 C:\Users\Kenneth\Desktop\Proyecto de progra\Main\Main.cpp(8,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  Room.cpp
-  Sale.cpp
-  Schedule.cpp
-  Seat.cpp
-  Generando código...
   Main.vcxproj -> C:\Users\Kenneth\Desktop\Proyecto de progra\x64\Debug\Main.exe

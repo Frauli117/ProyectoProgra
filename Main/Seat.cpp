@@ -1,11 +1,13 @@
 #include "Seat.h"
 
-Seat::Seat(){
-	state = 'D';
+Seat::Seat(){}
+
+char Seat::getState() {
+    return state;
 }
 
-char Seat::getState() { 
-	return state; 
+void Seat::setState(char newState) {
+    state = newState;
 }
 
 int Seat::getId() { return id; }
